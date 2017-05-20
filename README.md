@@ -20,7 +20,6 @@ Example of running the project againts a non local Redis: java -Dhostname=myHost
 
 When you run the project with Lettuce, everything is working as expected.
 When you will run the project with Jedis the following Exception is trown and the question is why:
-05-20@22:40:01 ERROR ( MyCache.java:58)     - Exception
 org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.StreamCorruptedException: invalid stream header: EFBFBDEF
 	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.deserialize(JdkSerializationRedisSerializer.java:82)
 	at test.MyCache.deserializeKeys(MyCache.java:70)
@@ -39,6 +38,3 @@ Caused by: java.io.StreamCorruptedException: invalid stream header: EFBFBDEF
 	at org.springframework.core.serializer.DefaultDeserializer.deserialize(DefaultDeserializer.java:68)
 	at org.springframework.core.serializer.support.DeserializingConverter.convert(DeserializingConverter.java:73)
 	... 5 more
-
-
-
