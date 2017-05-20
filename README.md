@@ -44,3 +44,5 @@ Caused by: java.io.StreamCorruptedException: invalid stream header: EFBFBDEF
 	at org.springframework.core.serializer.support.DeserializingConverter.convert(DeserializingConverter.java:73)
 	... 5 more
 ```
+
+In case you have an idea about how to solve the above mentioned problem, please contact the developer of this project.
