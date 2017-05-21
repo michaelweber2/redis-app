@@ -1,7 +1,7 @@
 # redis-app
 Sample Java app for Redis cache.
 
-The purpose of this sample project is to find out why an Exception is thrown when we try to read all keys from a Redis cache, using Jedis client.
+The purpose of this sample project is to find out why an Exception is thrown when we try to read all keys from a Redis cache, using Jedis client. The recommended Redis command for reading all the keys is "scan" and we are using it.
 
 This project is using Java 8, Maven (3+), Spring Data Redis (1.8.3.RELEASE), Lettuce (4.3.1.Final) and Jedis (2.9.0).
 This project was tested with Redis server 3.2.9.
