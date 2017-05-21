@@ -6,6 +6,8 @@ The purpose of this sample project is to find out why an Exception is thrown whe
 This project is using Java 8, Maven (3+), Spring Data Redis (1.8.3.RELEASE), Lettuce (4.3.1.Final) and Jedis (2.9.0).
 This project was tested with Redis server 3.2.9.
 
+We don't use directly Lettuce or Jedis, we let RedisTemplate to do it.
+
 How to see the problem.
 Clone the project: git clone https://github.com/michaelweber2/redis-app.git
 
